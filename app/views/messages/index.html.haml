@@ -1,0 +1,45 @@
+.header
+  グループを作成しました
+
+.left-contents
+  .left-contents__menu
+    .left-contents__menu__box
+      test-user
+      .left-contents__menu__box--icon
+        =link_to "https://www.facebook.com/", class: "left-contents__menu__box--btn" do
+          = fa_icon 'pencil-square-o'
+        =link_to "https://twitter.com/",class: "left-contents__menu__box--btn"do
+          = fa_icon 'gear'
+  .left-contents__maine
+    .left-contents__maine--group
+      test-group
+    .left-contents__maine--comment
+      さようなら
+
+.right-contents
+  .right-contents__menu
+    .right-contents__menu__box
+      .right-contents__menu__box--group
+        group-title
+      .right-contents__menu__box--name
+        Menber: anomeme
+    .right-contents__menu__btn
+      Edit
+  .right-contents__maine
+    .right-contents__maine--info
+      .right-contents__maine--info--user
+        anomeme
+      .right-contents__maine--info--date
+        2019,10,7 12:00:00
+    .right-contents__maine--text
+      よろしくです
+  .right-contents__footer
+    .right-contents__footer__box
+      .right-contents__footer__box--message
+        message
+        .right-contents__footer__box--message--image
+          %label{for: "upload-icon"}
+            %input.hidden{type: 'file', id:"upload-icon"} 
+            = fa_icon 'picture-o', class: 'fa-lg'
+      .right-contents__footer__box--send
+        %input{type: 'submit', value: 'Send', class: "send"}

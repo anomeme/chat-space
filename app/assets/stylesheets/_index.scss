@@ -1,0 +1,143 @@
+.header{
+  width: 100%;
+  background-color: #38aef0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+}
+
+.left-contents{
+  font-weight: bold;
+  color: #fff;
+  height: 100vh;
+  width: 300px;
+  float: left;
+  background-color: #2f3e51;
+  &__menu{
+    height: 100px;
+    background-color: #253141;
+    padding: 0 20px;
+    font-size: 16px;
+    &__box{
+      line-height: 100px;
+      display: flex;
+      justify-content: space-between;
+      &--btn{
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  &__maine{
+    padding:20px 20px 0;
+    height: calc(100vh - 100px);
+    box-sizing: border-box;
+    &--group{
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    &--comment{
+      font-size: 11px;
+      margin-bottom: 40px;
+    }
+  }    
+}
+
+.right-contents{
+  height: 100vh;
+  width: calc(100vw - 300px);
+  float: right;
+  &__menu{
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eee;
+    overflow: scroll;
+    box-sizing: border-box;
+    &__box{
+      margin-top: 35px;
+      &--group{
+      font-size: 20px;
+      margin-bottom: 15px;
+      }
+      &--name{
+        font-size: 12px;
+      }
+    }
+    &__btn{
+      height: 40px;
+      line-height: 40px;
+      margin: auto 0;
+      font-size: 20px;
+      color: #38aef0;
+      border: 1px solid;
+      margin-top: 28px;
+      padding: 0 20px;
+    }
+  }
+  &__maine{
+    padding: 46px 40px 0;
+    height: calc(100vh - 200px);
+    background-color: #fafafa; 
+    box-sizing: border-box;
+    color: #434a54;
+    &--info{
+      display: flex;
+      &--user{
+        float: left;
+        font-weight: bold;
+      }
+      &--date{
+        font-size: 12px;
+        float: left;
+        margin-left: 10px;
+        color: #999;
+      }
+    }
+    &--text{
+      font-size: 14px;
+      clear: both;
+      margin: 10px 0 40px;
+    }
+  }
+  &__footer{
+    height: 100px;
+    background-color: #ddd;
+    padding:25px 40px;
+    box-sizing: border-box;
+    &__box{
+      display: flex;
+      height: 50px;
+      &--message{
+        width: 100%;
+        background-color: #fff;
+        line-height: 50px;
+        float: left;
+        padding: 0 50px 0 10px;
+        position: relative;
+        &--image{
+          position: absolute;
+          margin-right: 10px;
+          top:0;
+          right:0;
+        }
+      }
+    }
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.send{
+  font-size:20px;
+  background-color: #38aef0;
+  float: right;
+  line-height: 50px;
+  color: #fff;
+  margin-left: 15px;
+  padding:0 30px;
+}
