@@ -19,10 +19,10 @@
   .right-contents__footer
     .right-contents__footer__box
       .right-contents__footer__box--message
-        message
-        .right-contents__footer__box--message--image
-          %label{for: "upload-icon"}
-            %input.hidden{type: 'file', id:"upload-icon"} 
-            = fa_icon 'picture-o', class: 'fa-lg'
-      .right-contents__footer__box--send
-        %input{type: 'submit', value: 'Send', class: "send"}
+        = form_for [@group, @message] do |f|
+          =f.text_field :text, class: 'form__message', placeholder: 'type a message'
+          .right-contents__footer__box--message--image
+            =f.label :image, class: 'form__mask__image' do
+              =fa_icon 'picture-o', class: 'icon'
+              =f.file_field :image, class: 'hidden'
+          = f.submit 'Send', class: 'form__submit'
