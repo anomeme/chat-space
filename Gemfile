@@ -59,3 +59,6 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 group :development, :test do
   gem 'devise'
 end
+
+gem 'carrierwave'
+gem 'mini_magick'
