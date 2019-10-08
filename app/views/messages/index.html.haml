@@ -1,21 +1,4 @@
-.header
-  グループを作成しました
-
-.left-contents
-  .left-contents__menu
-    .left-contents__menu__box
-      test-user
-      .left-contents__menu__box--icon
-        =link_to "https://www.facebook.com/", class: "left-contents__menu__box--btn" do
-          = fa_icon 'pencil-square-o'
-        =link_to "https://twitter.com/",class: "left-contents__menu__box--btn"do
-          = fa_icon 'gear'
-  .left-contents__maine
-    .left-contents__maine--group
-      test-group
-    .left-contents__maine--comment
-      さようなら
-
+= render 'shared/side_bar'
 .right-contents
   .right-contents__menu
     .right-contents__menu__box
@@ -24,7 +7,7 @@
       .right-contents__menu__box--name
         Menber: anomeme
     .right-contents__menu__btn
-      Edit
+      = link_to 'Edit', edit_group_path(@group)
   .right-contents__maine
     .right-contents__maine--info
       .right-contents__maine--info--user
