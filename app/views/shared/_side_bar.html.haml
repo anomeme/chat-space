@@ -1,0 +1,17 @@
+.left-contents
+  .left-contents__menu
+    %h3.left-contents__menu__box
+      = current_user.name
+      .left-contents__menu__box--icon
+        =link_to new_group_path do
+          = fa_icon 'pencil-square-o', class: 'icon'
+        =link_to edit_user_path(current_user) do
+          = fa_icon 'gear', class: 'icon'
+  .left-contents__maine
+    - current_user.groups.each do |group|
+      = link_to group_messages_path(group) do
+        .left-contents__maine--group
+          = group.name
+        .left-contents__maine--comment
+          メッセージ
+
