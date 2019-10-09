@@ -1,0 +1,10 @@
+.right-contents__maine--info
+  .right-contents__maine--info--user
+    =message.user.name
+  .right-contents__maine--info--date
+    =message.created_at.strftime("%Y/%m/%d %H:%M")
+.right-contents__maine--text
+  - if message.text.present?
+    %p.lower-message__text
+      = message.text
+  = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
