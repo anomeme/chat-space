@@ -14,10 +14,6 @@
       line-height: 100px;
       display: flex;
       justify-content: space-between;
-      &--btn{
-        color: #fff;
-        text-decoration: none;
-      }
     }
   }
   &__maine{
@@ -27,10 +23,14 @@
     &--group{
       font-size: 15px;
       margin-bottom: 5px;
+      color: #fff;
+      text-decoration: none;
     }
     &--comment{
       font-size: 11px;
       margin-bottom: 40px;
+      color: #fff;
+      text-decoration: none;
     }
   }    
 }
@@ -112,7 +112,7 @@
           position: absolute;
           margin-right: 10px;
           top:0;
-          right:0;
+          right:125px;
         }
       }
     }
@@ -124,6 +124,8 @@
 }
 
 .send{
+  position: absolute;
+  right:0;
   font-size:20px;
   background-color: #38aef0;
   float: right;
@@ -131,4 +133,26 @@
   color: #fff;
   margin-left: 15px;
   padding:0 30px;
+}
+
+.border{
+  height: 50px;
+  width: 15px;
+  position: absolute;
+  right: -27px;
+  background-color: #ddd;
+}
+
+.form__message{
+  border: 0px;
+}
+
+.icon{
+  color: #fff;
+  text-decoration: none;
+}
+
+a{
+  color: #38aef0;
+  text-decoration: none;
 }
