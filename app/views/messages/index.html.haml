@@ -3,7 +3,7 @@
   .right-contents__menu
     .right-contents__menu__box
       .right-contents__menu__box--group
-        group-title
+        = @group.name
       .right-contents__menu__box--name
         Menber: anomeme
     .right-contents__menu__btn
@@ -16,7 +16,8 @@
         = form_for [@group, @message] do |f|
           =f.text_field :text, class: 'form__message', placeholder: 'type a message'
           .right-contents__footer__box--message--image
-            =f.label :image, class: 'form__mask__image' do
-              =fa_icon 'picture-o', class: 'icon'
+            %div.border
+            =f.label :image do
+              =fa_icon 'picture-o', class: 'fa-lg'
               =f.file_field :image, class: 'hidden'
-          = f.submit 'Send', class: 'form__submit'
+          = f.submit 'Send', class: 'send'
