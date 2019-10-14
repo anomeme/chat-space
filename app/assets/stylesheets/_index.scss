@@ -69,6 +69,7 @@
     }
   }
   &__maine{
+    overflow: scroll;
     padding: 46px 40px 0;
     height: calc(100vh - 200px);
     background-color: #fafafa; 
