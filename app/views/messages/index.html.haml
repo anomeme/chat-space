@@ -5,9 +5,10 @@
       .right-contents__menu__box--group
         = @group.name
       .right-contents__menu__box--name
-        Menber: anomeme
+        Member: 
+        = @users.pluck(:name).join(", ")
     .right-contents__menu__btn
-      = link_to 'Edit', edit_group_path(@group)
+      = link_to 'Edit', edit_group_path(@group),data: {"turbolinks" => false}
   .right-contents__maine
     = render partial: 'message', collection: @messages
   .right-contents__footer
