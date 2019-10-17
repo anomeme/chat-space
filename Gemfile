@@ -67,6 +67,7 @@ gem "font-awesome-rails"
 gem 'font-awesome-sass', '~> 5.4.1'
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem 'carrierwave'
+gem 'fog-aws'
 gem 'mini_magick'
 
 group :production do
